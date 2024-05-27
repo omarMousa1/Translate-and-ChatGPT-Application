@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Form with Responses</title>
+    <style>
+        /* Basic styling for the chat container */
+        .chat-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            overflow-y: scroll;
+            max-height: 300px; /* Adjust the height as needed */
+        }
+
+        /* Style for user messages */
+        .user-message {
+            margin: 5px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #e2f7cb;
+            float: right;
+            clear: both;
+        }
+
+        /* Style for bot messages */
+        .bot-message {
+            margin: 5px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #c7ddf5;
+            float: left;
+            clear: both;
+        }
+
+        /* Styling for the input and submit button */
+        #user-message {
+            width: 70%;
+            padding: 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        #send-button {
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Translation</h1>
+
+<form>
+    <select name="lang">
+        <option>--</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Italian">Italian</option>
+    </select>
+    <input type="text" id="user-message" name="message" value="{{message}}" placeholder="Type a message..." required>
+    <input type="submit" id="send-button" value="Send">
+</form>
+<!-- Pre-defined responses -->
+<div class="bot-message">{{response}}</div>
+<!-- Add more pre-defined responses -->
+</body>
+</html>
