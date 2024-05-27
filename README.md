@@ -3,6 +3,7 @@ This project is a robust and versatile application that leverages the power of L
 
 # Usage
 Translation: Input text in one language and get the translated output in the desired language.
+
 Chatbot: Interact with the chatbot for various conversational scenarios.
 
 # Note
