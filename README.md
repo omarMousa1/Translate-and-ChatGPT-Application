@@ -8,5 +8,7 @@ Chatbot: Interact with the chatbot for various conversational scenarios.
 
 # Note
 this chatbot isn't like ChatGPT. 
+
 In this project you should add your data or pdf or your URL web site.
+
 You should customized the chunk-size and chunk-lap, to enable the chatbot to find the concept from your data.
